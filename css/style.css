@@ -1,0 +1,39 @@
+.todo-list .btn-remove-task {
+    transform: translateX(200%);
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.todo-list .list-group-item:hover .btn-remove-task {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.todo-list .list-group-item {
+    --bs-list-group-item-padding-y: 0;
+    padding-left: 0;
+}
+
+.todo-list .list-group-item .form-check {
+    padding-left: 4rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 0;
+    transition: background-color .3s ease-in-out;
+}
+
+.todo-list .list-group-item .form-check.active {
+    text-decoration: line-through;
+}
+
+.todo-list .list-group-item .form-check:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.nav-link{
+    border-bottom: 3px solid transparent;
+}
+.nav-link.active{
+    border-bottom: 3px solid var(--bs-primary);
+}
